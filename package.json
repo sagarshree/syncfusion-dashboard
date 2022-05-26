@@ -5,6 +5,7 @@
   "homepage": "http://syncfusion-dashboard.sagarshree.com.np/",
   "dependencies": {
     "@iconscout/react-unicons": "^1.1.6",
+    "@mui/material": "^5.8.1",
     "@syncfusion/ej2": "^19.4.48",
     "@syncfusion/ej2-react-calendars": "^19.4.48",
     "@syncfusion/ej2-react-charts": "^19.4.50",

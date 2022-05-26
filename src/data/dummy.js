@@ -50,6 +50,7 @@ import {
   UilUsersAlt,
   UilUserArrows,
   UilCalendarAlt,
+  UilSearch,
 
  } from '@iconscout/react-unicons';
 
@@ -578,6 +579,10 @@ export const links = [
       {
         name: "customers",
         icon: <UilUserArrows />,
+      },
+      {
+        name: "search",
+        icon: <UilSearch />,
       },
     ],
   },

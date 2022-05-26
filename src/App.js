@@ -20,6 +20,8 @@ import {
   ColorMapping,
   Editor,
   Line,
+  SearchPage,
+  
 } from "./pages/index.jsx";
 
 import {useStateContext} from "./contexts/ContextProvider";
@@ -72,6 +74,8 @@ const {activeMenu,themeSettings,setThemeSettings,currentColor,currentMode} = use
               <Route path="/orders" element={<Orders />} />
               <Route path="/employees" element={<Employees />} />
               <Route path="/customers" element={<Customers />} />
+              <Route path="/search" element={<SearchPage />} />
+
 
               {/* Apps */}
               <Route path="/kanban" element={<Kanban />} />
