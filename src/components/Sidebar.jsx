@@ -17,7 +17,7 @@ const Sidebar = () => {
   const activeLink =
     "flex item-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2";
   const normalLink =
-    "flex item-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-black text-md text-grey-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2";
+    "flex item-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-black text-md text-grey-700 hover:bg-light-gray dark:text-gray-200 dark:hover:text-white dark:hover:bg-gray-600 m-2";
 
   return (
     <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10 ">
@@ -29,8 +29,8 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiShopware />
-              <span>Shoppy</span>
+            <SiShopware style={{color:currentColor}} />
+              <span style={{color:currentColor}}>SHARE HUB</span>
             </Link>
             <TooltipComponent content="Close" position="BottomCenter">
               <button
@@ -52,9 +52,10 @@ const Sidebar = () => {
                     onClick={handleCloseSideBar}
                     className={({isActive})=>(isActive ? activeLink : normalLink)}
                     style={ ({isActive})=>(isActive? { backgroundColor: currentColor }:{})}
+                  
                   >
                     {link.icon}
-                    <span className="capitalize">
+                    <span className="capitalize font-medium">
                       {link.name}
                     </span>
                   </NavLink>

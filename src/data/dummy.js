@@ -44,6 +44,15 @@ import product6 from "./product6.jpg";
 import product7 from "./product7.jpg";
 import product8 from "./product8.jpg";
 
+import { 
+  UilShoppingBag,
+  UilShoppingCart,
+  UilUsersAlt,
+  UilUserArrows,
+  UilCalendarAlt,
+
+ } from '@iconscout/react-unicons';
+
 export const gridOrderImage = (props) => (
   <div>
     <img
@@ -510,12 +519,47 @@ export const employeesGrid = [
 ];
 
 export const links = [
+  // {
+  //   title: "Your Info",
+  //   links: [
+  //     {
+  //       name: "portfolio",
+  //       icon: <UilBag/>,
+  //     },
+  //     {
+  //       name: "watchlist",
+  //       icon: <UilEye/>,
+  //     },
+  //     {
+  //       name: "notes",
+  //       icon: <UilNotes/>,
+  //     },{
+  //       name: "notifications",
+  //       icon: <UilBell/>,
+  //     },{
+  //       name: "ipo-result",
+  //       icon: <UilSmile/>,
+  //     },{
+  //       name: "my-brokers",
+  //       icon: <UilLinkBroken/>,
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Premium Section",
+  //   links: [
+  //     {
+  //       name: "broker-analysis",
+  //       icon: <UilChartLine/>,
+  //     },
+  //   ],
+  // },
   {
     title: "Dashboard",
     links: [
       {
         name: "ecommerce",
-        icon: <FiShoppingBag />,
+        icon: <UilShoppingBag/>,
       },
     ],
   },
@@ -525,15 +569,15 @@ export const links = [
     links: [
       {
         name: "orders",
-        icon: <AiOutlineShoppingCart />,
+        icon: <UilShoppingCart />,
       },
       {
         name: "employees",
-        icon: <IoMdContacts />,
+        icon: <UilUsersAlt />,
       },
       {
         name: "customers",
-        icon: <RiContactsLine />,
+        icon: <UilUserArrows />,
       },
     ],
   },
@@ -542,7 +586,7 @@ export const links = [
     links: [
       {
         name: "calendar",
-        icon: <AiOutlineCalendar />,
+        icon: <UilCalendarAlt />,
       },
       {
         name: "kanban",
@@ -872,9 +916,14 @@ export const themeColors = [
     color: "#0f890f",
     name: "green-theme",
   },
+ 
   {
     color: "  #bb1887",
     name: "green-theme",
+  },
+  {
+    color: "#044a4b",
+    name: "share-hub",
   },
 ];
 
