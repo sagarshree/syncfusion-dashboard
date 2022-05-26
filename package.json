@@ -2,6 +2,7 @@
   "name": "project_syncfusion_dashboard",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://syncfusion-dashboard.sagarshree.com.np/",
   "dependencies": {
     "@syncfusion/ej2": "^19.4.48",
     "@syncfusion/ej2-react-calendars": "^19.4.48",
@@ -13,9 +14,12 @@
     "@syncfusion/ej2-react-popups": "^19.4.52",
     "@syncfusion/ej2-react-richtexteditor": "^19.4.50",
     "@syncfusion/ej2-react-schedule": "^19.4.50",
+    "gh-pages": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
     "react-icons": "^4.3.1",
+    "react-quill": "^2.0.0-beta.4",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0"
   },
@@ -23,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
